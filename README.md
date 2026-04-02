@@ -19,6 +19,18 @@ A web-based system designed to manage library operations efficiently, including 
 
 ---
 
+## 👥 Team Members
+
+| Name | Role | GitHub |
+|------|------|--------|
+| Anas Abu Shammala | Documentation Lead | @anasshammala |
+| Aya Abu Zyada | Frontend Developer | @aya-nasser-123 |
+| Sondos Yassin | Backend Developer | @SondosYassin1 |
+| Aya Hussein | Tester / QA | @ayahussein2005 |
+
+---
+
+
 ## 📋 Table of Contents
 
 - [Project Description](#-project-description)
