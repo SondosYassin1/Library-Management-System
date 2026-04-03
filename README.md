@@ -2,7 +2,34 @@
 
 > A digital web-based system designed to simplify and organize daily library operations in a modern and efficient way.
 
+
+## 📌 Quick Overview
+A web-based system designed to manage library operations efficiently, including book management, borrowing and returning tracking, and improving overall service quality.
+
+## ⚙️ Tech Stack
+- ASP.NET Core MVC
+- SQL Server
+- Entity Framework Core
+- GitHub
+
+## 📂 Documentation
+- [Introduction](docs/01-introduction.md)
+- [Stakeholder Analysis](docs/02-stakeholder-analysis.md)
+- [Use Cases](docs/03-use-cases.md)
+
 ---
+
+## 👥 Team Members
+
+| Name | Role | GitHub |
+|------|------|--------|
+| Anas Abu Shammala | Documentation Lead | @anasshammala |
+| Aya Abu Zyada | Frontend Developer | @aya-nasser-123 |
+| Sondos Yassin | Backend Developer | @SondosYassin1 |
+| Aya Hussein | Tester / QA | @ayahussein2005 |
+
+---
+
 
 ## 📋 Table of Contents
 
@@ -136,6 +163,7 @@ The system supports **four types of users**: Admin, Library Staff, Members, and 
 | View Own Fines | ✅ | ✅ | ✅ *(own only)* | ❌ |
 
 ---
+
 
 ## 🚀 Getting Started
 
