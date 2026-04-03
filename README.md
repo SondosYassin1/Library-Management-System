@@ -35,8 +35,8 @@ A web-based system designed to manage library operations efficiently, including 
 
 - [Project Description](#-project-description)
 - [Business Requirements](#-business-requirements)
-- [Functional Requirements](#️-functional-requirements)
-- [Non-Functional Requirements](#️-non-functional-requirements)
+- [Functional Requirements](#-functional-requirements)
+- [Non-Functional Requirements](#-non-functional-requirements)
 - [User Roles & Permissions](#-user-roles--permissions)
 
 ---
