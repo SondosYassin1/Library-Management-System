@@ -165,5 +165,54 @@ The system supports **four types of users**: Admin, Library Staff, Members, and 
 ---
 
 
+## 🚀 Getting Started
+
+### Prerequisites
+
+| Tool | Version | Download |
+|------|---------|----------|
+| .NET SDK | 9.0 | https://dotnet.microsoft.com/download |
+| Git | Latest | https://git-scm.com/downloads |
+
+---
+
+### 📥 Installation & Setup
+
+#### 1. Clone the Repository
+```bash
+git clone https://github.com/your-username/Library-Management-System.git
+cd Library-Management-System
+```
+
+#### 2. Switch to the Development Branch
+```bash
+git checkout develop
+```
+
+#### 3. Build the Project
+```bash
+dotnet build
+```
+
+#### 4. Run the Project
+```bash
+dotnet run
+```
+
+The application will be available at:
+```
+https://localhost:7266
+http://localhost:5282
+```
+
+---
+
+### ⚠️ Common Issues
+
+| Problem | Solution |
+|---------|----------|
+| Build errors on first run | Make sure .NET SDK 9.0 is installed |
+| Port already in use | Change the port in `Properties/launchSettings.json` |
+
 > 📁 This documentation was prepared by the project team as part of the graduation project requirements.
 
