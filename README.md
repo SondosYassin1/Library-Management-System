@@ -2,15 +2,20 @@
 
 > A digital web-based system designed to simplify and organize daily library operations in a modern and efficient way.
 
+---
 
 ## 📌 Quick Overview
 A web-based system designed to manage library operations efficiently, including book management, borrowing and returning tracking, and improving overall service quality.
+
+---
 
 ## ⚙️ Tech Stack
 - ASP.NET Core MVC
 - SQL Server
 - Entity Framework Core
 - GitHub
+
+---
 
 ## 📂 Documentation
 - [Introduction](docs/01-introduction.md)
@@ -30,13 +35,12 @@ A web-based system designed to manage library operations efficiently, including 
 
 ---
 
-
 ## 📋 Table of Contents
 
 - [Project Description](#-project-description)
 - [Business Requirements](#-business-requirements)
-- [Functional Requirements](#-functional-requirements)
-- [Non-Functional Requirements](#-non-functional-requirements)
+- [Functional Requirements](#️-functional-requirements)
+- [Non-Functional Requirements](#️-non-functional-requirements)
 - [User Roles & Permissions](#-user-roles--permissions)
 
 ---
@@ -116,22 +120,22 @@ The system supports **four types of users**: Admin, Library Staff, Members, and 
 
 | NFR# | Category | Requirement |
 |------|----------|-------------|
-| NFR1 | Performance | The system shall respond to all user actions within 2 seconds for at least 95% of requests during normal working hours. |
-| NFR2 | Availability | The system shall be available for use 99% of library working hours, excluding scheduled maintenance. |
-| NFR3 | Reliability | The system shall operate without critical failure for a minimum of 30 consecutive days under normal usage conditions. |
-| NFR4 | Usability | The system shall allow new library staff to perform basic operations (add, borrow, return books) after no more than 1 hour of training. |
-| NFR5 | Security | The system shall restrict access so that only authorized users can log in using a unique username and password. |
-| NFR6 | Reliability | The system shall ensure that no book or borrowing record is lost or duplicated during normal operations or system updates, with 99.9% data consistency across all transactions. |
-| NFR7 | Maintainability | The system shall allow system updates or rule changes to be applied without affecting existing data. |
-| NFR8 | Scalability | The system shall support an increase of up to 200% in the number of books and users without performance degradation. |
-| NFR9 | Backup & Recovery | The system shall perform daily automatic backups and allow data recovery within 24 hours in case of data loss. |
-| NFR10 | Compatibility | The system shall operate correctly on modern web browsers (Chrome, Edge, Firefox) used on library computers. |
-| NFR11 | Portability | The system shall be accessible from any device with a web browser without requiring additional software installation or configuration. |
-| NFR12 | Performance | Guest-facing browsing and search pages shall load within 2 seconds without login. |
-| NFR13 | Security | The system shall automatically redirect guests to the login page if they attempt to access any restricted page or operation. |
-| NFR14 | Usability | The guest interface shall be simple and straightforward, requiring no instructions to navigate. |
-| NFR15 | Compatibility | Guest-facing pages shall function correctly on all modern browsers (Chrome, Edge, Firefox). |
-| NFR16 | Portability | Guests shall be able to access the system from any device (mobile, tablet, desktop) without installing any software. |
+| NFR1 | Performance | The system shall respond within 2 seconds for 95% of requests. |
+| NFR2 | Availability | The system shall be available 99% of working hours. |
+| NFR3 | Reliability | Operates without failure for 30 days. |
+| NFR4 | Usability | Staff can learn in under 1 hour. |
+| NFR5 | Security | Secure login required. |
+| NFR6 | Reliability | 99.9% data consistency. |
+| NFR7 | Maintainability | Updates without affecting data. |
+| NFR8 | Scalability | Supports 200% growth. |
+| NFR9 | Backup & Recovery | Daily backups + recovery in 24h. |
+| NFR10 | Compatibility | Works on Chrome, Edge, Firefox. |
+| NFR11 | Portability | Works on any device. |
+| NFR12 | Performance | Guest pages load within 2 seconds. |
+| NFR13 | Security | Redirect unauthorized users. |
+| NFR14 | Usability | Simple guest interface. |
+| NFR15 | Compatibility | Works on all browsers. |
+| NFR16 | Portability | Works on mobile, tablet, desktop. |
 
 ---
 
@@ -141,78 +145,27 @@ The system supports **four types of users**: Admin, Library Staff, Members, and 
 
 | Role | Description |
 |------|-------------|
-| 🔴 **Admin** | Manages the entire system: users, settings, and reports. |
-| 🔵 **Library Staff** | Handles books: add, update, delete, record borrowing and returns. |
-| 🟢 **Member** | Registers, logs in, views borrowing history, and borrows books. |
-| ⚪ **Guest** | Browses available books only — no login required. |
-
-### Permissions Matrix
-
-| Permission | Admin | Library Staff | Member | Guest |
-|------------|:-----:|:-------------:|:------:|:-----:|
-| Add / Edit / Delete Books | ✅ | ✅ | ❌ | ❌ |
-| Record Borrowing & Returns | ✅ | ✅ | ❌ | ❌ |
-| View Available Books | ✅ | ✅ | ✅ | ✅ *(partial)* |
-| Search Books | ✅ | ✅ | ✅ | ✅ *(partial)* |
-| View Borrowing History | ✅ | ✅ | ✅ *(own only)* | ❌ |
-| Generate Reports | ✅ | ✅ | ❌ | ❌ |
-| Manage Users | ✅ | ❌ | ❌ | ❌ |
-| System Settings | ✅ | ❌ | ❌ | ❌ |
-| Register as Member | ❌ | ❌ | ❌ | ✅ |
-| View Overdue Notifications | ✅ | ✅ | ❌ | ❌ |
-| View Own Fines | ✅ | ✅ | ✅ *(own only)* | ❌ |
+| 🔴 Admin | Full system control |
+| 🔵 Library Staff | Manage books & transactions |
+| 🟢 Member | Borrow books |
+| ⚪ Guest | Browse only |
 
 ---
-
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-| Tool | Version | Download |
-|------|---------|----------|
-| .NET SDK | 9.0 | https://dotnet.microsoft.com/download |
-| Git | Latest | https://git-scm.com/downloads |
+- .NET SDK 9.0  
+- Git  
 
 ---
 
-### 📥 Installation & Setup
+### Installation
 
-#### 1. Clone the Repository
 ```bash
 git clone https://github.com/your-username/Library-Management-System.git
 cd Library-Management-System
-```
-
-#### 2. Switch to the Development Branch
-```bash
 git checkout develop
-```
-
-#### 3. Build the Project
-```bash
 dotnet build
-```
-
-#### 4. Run the Project
-```bash
 dotnet run
-```
-
-The application will be available at:
-```
-https://localhost:7266
-http://localhost:5282
-```
-
----
-
-### ⚠️ Common Issues
-
-| Problem | Solution |
-|---------|----------|
-| Build errors on first run | Make sure .NET SDK 9.0 is installed |
-| Port already in use | Change the port in `Properties/launchSettings.json` |
-
-> 📁 This documentation was prepared by the project team as part of the graduation project requirements.
-
