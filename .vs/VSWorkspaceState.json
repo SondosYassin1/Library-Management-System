@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Library-Management-System",
+    "\\Library-Management-System\\Controllers",
+    "\\Library-Management-System\\Models",
+    "\\Library-Management-System\\Properties",
+    "\\Library-Management-System\\Views",
+    "\\Library-Management-System\\Views\\Home",
+    "\\Library-Management-System\\Views\\Shared",
+    "\\Library-Management-System\\wwwroot"
+  ],
+  "SelectedNode": "\\Library-Management-System\\Program.cs",
+  "PreviewInSolutionExplorer": false
+}
